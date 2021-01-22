@@ -1,0 +1,50 @@
+/* for a single element or to compound selectors add , between them */
+p, h1 { 
+  color: blue;
+  
+}
+/* .classname for a class type, we can use just the class or with the elemnt teype before*/
+p.alert {
+  color: red;
+}
+
+/* #idvalue for an id, we can use just the id or with the elemnt teype before*/
+p#introduction {
+  color: blue;
+}
+
+/* Descendant Selectors */
+article p {
+  color: blue;
+}
+
+/* Child Selectors */
+article > p {
+  color: blue;
+}
+/* Adjacent Sibling Selector*/ 
+h3 + p {
+  color: blue;
+}
+/*General Sibling Selector*/
+h3 ~ p {
+  color: red;
+}
+/* Attribute Selectors*/
+input[type="text"] {
+  width: 200px;
+}
+
+/* Pseudo-class Selectors*/ 
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+
+/*Universal*/
+  * {
+  color: yellow;
+}
+
